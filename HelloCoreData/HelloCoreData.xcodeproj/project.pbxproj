@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38A8DC192850856F007095B5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A8DC182850856F007095B5 /* CoreDataManager.swift */; };
+		38A8DC1B28508FA2007095B5 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A8DC1A28508FA2007095B5 /* MovieDetail.swift */; };
 		38B786D82849A897006BB9BE /* HelloCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B786D72849A897006BB9BE /* HelloCoreDataApp.swift */; };
 		38B786DA2849A897006BB9BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B786D92849A897006BB9BE /* ContentView.swift */; };
 		38B786DC2849A898006BB9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B786DB2849A898006BB9BE /* Assets.xcassets */; };
 		38B786DF2849A898006BB9BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B786DE2849A898006BB9BE /* Preview Assets.xcassets */; };
+		38B786E72849A8DB006BB9BE /* HelloCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38B786E52849A8DB006BB9BE /* HelloCoreDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38A8DC182850856F007095B5 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		38A8DC1A28508FA2007095B5 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		38B786D42849A897006BB9BE /* HelloCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B786D72849A897006BB9BE /* HelloCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoreDataApp.swift; sourceTree = "<group>"; };
 		38B786D92849A897006BB9BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38B786DB2849A898006BB9BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38B786DE2849A898006BB9BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38B786E62849A8DB006BB9BE /* HelloCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38A8DC1728508557007095B5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				38A8DC182850856F007095B5 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		38B786CB2849A897006BB9BE = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +65,13 @@
 		38B786D62849A897006BB9BE /* HelloCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				38A8DC1728508557007095B5 /* Managers */,
 				38B786D72849A897006BB9BE /* HelloCoreDataApp.swift */,
 				38B786D92849A897006BB9BE /* ContentView.swift */,
+				38A8DC1A28508FA2007095B5 /* MovieDetail.swift */,
 				38B786DB2849A898006BB9BE /* Assets.xcassets */,
 				38B786DD2849A898006BB9BE /* Preview Content */,
+				38B786E52849A8DB006BB9BE /* HelloCoreDataModel.xcdatamodeld */,
 			);
 			path = HelloCoreData;
 			sourceTree = "<group>";
@@ -137,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38B786E72849A8DB006BB9BE /* HelloCoreDataModel.xcdatamodeld in Sources */,
 				38B786DA2849A897006BB9BE /* ContentView.swift in Sources */,
+				38A8DC1B28508FA2007095B5 /* MovieDetail.swift in Sources */,
+				38A8DC192850856F007095B5 /* CoreDataManager.swift in Sources */,
 				38B786D82849A897006BB9BE /* HelloCoreDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +359,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		38B786E52849A8DB006BB9BE /* HelloCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				38B786E62849A8DB006BB9BE /* HelloCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 38B786E62849A8DB006BB9BE /* HelloCoreDataModel.xcdatamodel */;
+			path = HelloCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 38B786CC2849A897006BB9BE /* Project object */;
 }
